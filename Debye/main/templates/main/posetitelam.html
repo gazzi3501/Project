@@ -1,0 +1,31 @@
+{% extends 'main/Example.html' %}
+
+{% block title %} Посетителям {% endblock %}
+
+{% block infa %}
+ <div class="features">
+    <h1>О Музее</h1>
+    {% if news %}
+      {% for bh in news %}                    
+        <div class="alert alert-warning">
+           <h3>{{ bh.title }}</h3>
+           <p>{{ bh.intro }}</p>
+        </div>
+      {% endfor %} 
+    {% else %}
+       <p>На данный момент новостей нет!</p>
+    {% endif %}
+ </div>
+
+ <div class="image-container"></div>
+ 
+{% endblock %}
+
+<div class="panel">
+   <bl>
+     <a href="{% url 'always' %}"><bi>    Планирование визита</bi></a>
+     <a href="{% url 'temporary' %}"><bi>    Экскурсии</bi></a>
+     <a href="{% url 'online' %}"><bi>    Виртуальный тур</bi></a>
+     <a href="{% url 'online' %}"><bi>    Ресторан и кафе</bi></a>
+   </bl>
+ </div>

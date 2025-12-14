@@ -1,0 +1,21 @@
+{% extends 'main/Example.html' %}
+
+{% block title %} Магазин сувениров {% endblock %}
+
+{% block infa %}
+ <div class="features">
+    <h1>Магазин сувениров и подарков для Вас!</h1>
+    <p></p>
+    <button class="btn btn-warning">На страницу про нас!</button> 
+ </div>
+
+ <div class="panel">
+   <bl>
+     <a href="{% url 'always' %}"><bi>    Книги</bi></a>
+     <a href="{% url 'temporary' %}"><bi>    Сувениры и подарки</bi></a>
+     <a href="{% url 'online' %}"><bi>    Изделия ручной работы</bi></a>
+   </bl>
+ </div>
+
+ <div class="image-container"></div>
+{% endblock %}

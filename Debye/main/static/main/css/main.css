@@ -1,0 +1,201 @@
+/* ОПРЕДЕЛЕНИЕ КАСТОМНЫХ ШРИФТОВ */
+@font-face{
+    font-family: 'CustomFont1';
+    src: url('/main/css/fonts/CormorantSC-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap}
+
+
+/* ГЛАВНАЯ ВЕРХНЯЯ ПАНЕЛЬ (НЕ ДВИЖЕТСЯ) */
+aside{
+    background:#110f27aa;
+    width: 100%;       #ширина
+    padding: 20px 5px;      #отступы
+    color: #fff;
+    box-sizing: border-box;
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 90px;}
+
+/* ЛОГОТИП НА ПАНЕЛИ */
+aside img {
+width: 85px;
+float: left;
+margin-left: 20px;
+margin-top: 5px;
+height: 80px;
+}
+
+/* ТЕКСТ РЯДОМ С ЛОГОТИПОМ */
+aside .logo {
+    color: #ffffff;
+    font-size: 25px;
+    font-family:'Times New Roman', Times, serif;
+    margin-right: 10px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* КНОПКИ НА ГЛАВНОЙ ПАНЕЛИ */
+aside ul {list-style: none;
+font-size: 20px;
+font-family: 'Times New Roman', Times, serif;
+text-align: center;
+display: flex;
+margin-right: 25px}
+
+aside ul li {
+    font-family:'Times New Roman', Times, serif;
+    color: #ffffff;
+    display: block;
+    margin-top: 20px;
+    transition: transform .9s ease;}
+
+aside ul li:hover, aside ul a:hover {
+    color: #7595ff;
+    text-decoration: none;
+    transform: scale(1.10);}
+
+aside ul i{margin-left: 15px;}     /*двигает название с иконками вправо*/
+
+/* ИНФОРМАЦИЯ ОСНОВНОЙ ЧАСТИ СТРАНИЦЫ */
+main .features {                       
+    float: left;
+    color: #ffffff;
+    margin-top: 150px;
+    text-align: center;
+    width: 100%;}
+
+main .features h1 {font-size: 50px;
+font-family:'Times New Roman', Times, serif}
+
+main .features p {max-width: 400px; margin: 20px auto}
+
+main .features button {
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color .25s ease,
+    transform .25s ease}
+
+main .features button:hover {
+    background-color: #7595ff}
+
+
+
+
+/* КНОПКИ ПОД ГЛАВНОЙ ПАНЕЛЬЮ */
+main .panel{
+    background:#1e0ce700;
+    width: 100%;       #ширина
+    padding: 20px 5px;      #отступы
+    color: #fff;
+    box-sizing: border-box;
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    position: fixed;
+    top: 90;
+    left: 0;
+    z-index: 1000;
+    height: 70px;
+}
+
+main .panel ul {list-style: none;
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+   }
+
+main .panel a {
+    margin-top: 5px;
+    margin-right: 120;
+    margin-left: 120;
+    display: inline-block;
+    padding: 5px 15px;
+    background-color: #7595ff;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    transition: transform .9s ease;
+}
+
+main .panel a:hover {background-color: white; transform: scale(1.10)}
+
+main .panel ul li {
+    color: #ffffff;
+    display: block;
+    text-align: center;
+    transition: transform .9s ease}
+
+main .panel ul li:hover, main .panel ul li:hover {
+    color: #7595ff;
+    text-decoration: none;
+    transform: scale(1.10);}
+
+
+
+/* БОКОВАЯ ПАНЕЛЬ ПЕРВОЙ СТРАНИЦЫ СЛЕВА */
+main .privet {
+    float: left;
+    background: #7595ff;
+    width: 360px;       #ширина
+    height: 150vh;    #высота
+    color: black;
+    margin-left: 40px;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column}
+
+main .privet p2 {
+    font-size: 20px
+    }
+
+main .privet button {
+    font-size: 20px;
+    background-color:#110f27aa;
+    cursor: pointer;
+    transition: background-color .25s ease,
+    transform .25s ease}
+
+main .privet button:hover {
+    background-color: #7595ff}
+
+
+
+
+/* СТРАНИЦА ДЛЯ ПОСЕТИТЕЛЕЙ */
+main .alert-warning {
+    font-family:'Times New Roman', Times, serif;
+    float: left;
+    clear: both;
+    width: 1410px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: left}
+
+main .alert-warning h3 {font-size: 48px}
+
+main .alert-warning p {font-size: 22px}
+
+
+/*ЗАДАЛ ФОН ДЛЯ САЙТА КАРТИНКОЙ*/
+main .image-container {
+    background: url("img/image.jpg");
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}

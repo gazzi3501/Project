@@ -1,0 +1,21 @@
+{% extends 'main/Example.html' %}
+
+{% block title %} События и программы {% endblock %}
+
+{% block infa %}
+ <div class="features">
+    <h1>Наши события и программы</h1>
+    <p></p>
+    <button class="btn btn-warning">На страницу про нас!</button> 
+ </div>
+ 
+ <div class="panel">
+   <bl>
+     <a href="{% url 'afisha' %}"><bi>    Афиша</bi></a>
+     <a href="{% url 'lectures' %}"><bi>    Лекции и дискуссии</bi></a>
+     <a href="{% url 'masterclass' %}"><bi>    Мастер классы</bi></a>
+   </bl>
+ </div>
+
+ <div class="image-container"></div>
+{% endblock %}

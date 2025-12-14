@@ -1,0 +1,29 @@
+{% extends 'main/Example.html' %}
+{% load static %}
+
+{% block title %} Этнографический Музей КФУ {% endblock %}
+
+{% block infa %}
+ 
+ <div class="features">
+    <h1>Главная страница</h1>
+    <p>Предстоящие мероприятия и события</p>
+ </div>
+
+ <div class="panel">
+   <ul>
+     <a href="{% url 'always' %}"><li>    Постоянные экспозиции</li></a>
+     <a href="{% url 'temporary' %}"><li>    Временные выставки</li></a>
+     <a href="{% url 'online' %}"><li>    Онлайн коллекции</li></a>
+   </ul>
+ </div>
+
+ <div class="privet">
+   <h2>Добро пожаловать в Этнографичеcкий музей КФУ!</h2>
+   <p2>Познакомьтесь с культурой народов Поволжья и других</p2>
+   <button class="btn btn-warning">Купить билеты</button>
+ </div>
+
+  <div class="image-container"></div>
+ 
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends 'main/Example.html' %}
+
+{% block title %} Образование и наука {% endblock %}
+
+{% block infa %}
+ <div class="features">
+    <h1>Образование и наука</h1>
+    <p></p>
+    <button class="btn btn-warning">На страницу про нас!</button> 
+ </div>
+
+ <div class="panel">
+   <bl>
+     <a href="{% url 'school' %}"><bi>    Программы для школ</bi></a>
+     <a href="{% url 'university' %}"><bi>    Программы для ВУЗов</bi></a>
+     <a href="{% url 'library' %}"><bi>    Библиотека и архив</bi></a>
+     <a href="{% url 'science' %}"><bi>    Научная деятельность</bi></a>
+   </bl>
+ </div>
+
+ <div class="image-container"></div>
+{% endblock %}
