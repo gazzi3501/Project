@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-lnbs&%d9=z-gw7@cu1ag72)8muvzeqb%&h2wtqsoy3)0yvm=$y'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['adorik.pythonanywhere.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
